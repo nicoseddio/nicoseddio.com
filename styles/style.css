@@ -1,0 +1,47 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body {
+	display: inherit;
+	background: white;
+	font-family: sans-serif;
+	color: black;
+	font-size: 18px;
+	z-index: 100;
+}
+
+a {
+	text-decoration:none;
+	color: inherit;
+	font-weight: bold;
+	text-transform: uppercase;
+	-o-transition:.4s;
+	-ms-transition:.4s;
+	-moz-transition:.4s;
+	-webkit-transition:.4s;
+	transition:.4s;
+}
+a:hover {
+	color: white;
+	background-color: black;
+}
+
+nav a {
+	float: left;
+	padding: 16px;
+}
+nav menu {
+	float: right;
+}
+
+.width-page {
+	max-width: 1280px;
+}
+
+.clearFloat, .clear-float {
+	clear:both;
+}
