@@ -12,6 +12,7 @@ body {
 	color: black;
 	font-size: 18px;
 	z-index: 100;
+	box-sizing: border-box;
 }
 body header {
 	max-width:1280px;
@@ -56,11 +57,6 @@ nav menu {
 	float: right;
 }
 
-main .banner {
-	height:700px;
-	background-color:black;
-}
-
 .flex-container {
 	display: flex;
 	flex-direction: row;
@@ -74,8 +70,37 @@ main .banner {
 }
 
 .module {
-	border: 5px solid black;
+	/* border: 5px solid black; */
 	margin: 64px 0;
 	width: 30%;
 	min-height: 300px;
+}
+
+
+
+.inverting-icon .icon-container {
+	position: relative;
+	width: 70%;
+	height: 70%;
+	margin: auto;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.inverting-icon img {
+	position: absolute;
+	/* overflow: hidden; */
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inverting-icon .icon-top {
+	z-index: 9999;
+	transition: opacity .3s linear;
+}
+.inverting-icon:hover > .icon-container .icon-top {
+	opacity: 0%;
 }
