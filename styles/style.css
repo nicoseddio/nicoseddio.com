@@ -45,6 +45,7 @@ a:hover {
 
 img {
 	width: 100%;
+	display: block;
 }
 nav a {
 	float: left;
@@ -68,8 +69,8 @@ nav menu {
 
 .module {
 	/* border: 5px solid black; */
-	margin: 64px 0;
-	width: 30%;
+	margin: 0;
+	width: 33.3333%;
 	min-height: 300px;
 }
 
