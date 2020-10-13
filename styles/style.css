@@ -27,6 +27,16 @@ body footer {
 	margin: 0 auto;
 }
 
+h1 {
+	font-size: 64px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	color: white;
+	background-color: black;
+	padding: 64px;
+}
+
 a {
 	text-decoration:none;
 	color: inherit;
@@ -101,4 +111,35 @@ nav menu {
 }
 .inverting-icon:hover > .icon-container .icon-top {
 	opacity: 0%;
+}
+
+
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 12px 0;
+	border: 5px solid black;
+	background-color: black;
+	color: white;
+	font-size: large;
+}
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 12px 0;
+	border: 5px solid black;
+	background-color: black;
+	color: white;
+	font-size: large;
+	resize: none;
+}
+button {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 12px 0;
+	border: 5px solid black;
+	background-color: black;
+	color: white;
+	font-size: large;
+	text-transform: uppercase;
 }

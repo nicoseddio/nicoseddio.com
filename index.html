@@ -26,28 +26,39 @@
 			
 			<!-- social media icons -->
 			<section class="flex-container">
-
 				<a href="https://nicoseddio.com/linkedin" class="module inverting-icon">
 					<div class="icon-container">
 						<img src="media/images/social_linkedin_black.png" class="icon-top">
 						<img src="media/images/social_linkedin_white.png">
 					</div>
 				</a>
-
 				<a href="https://nicoseddio.com/github" class="module inverting-icon">
 					<div class="icon-container">
 						<img src="media/images/social_github_black.png" class="icon-top">
 						<img src="media/images/social_github_white.png">
 					</div>
 				</a>
-
 				<a href="https://nicoseddio.com/documents/resume.pdf" class="module inverting-icon">
 					<div class="icon-container">
 						<img src="media/images/icon_resume_black.png" class="icon-top">
 						<img src="media/images/icon_resume_white.png">
 					</div>
 				</a>
+			</section>
 
+			<!-- <section>
+				<h1>About</h1>
+				<p>This is a placeholder section!</p>
+			</section> -->
+			
+			<section>
+				<h1>Contact</h1>
+				<form onsubmit="return false">
+					<input type="text" placeholder="Name" id="contactFormInputName" />
+					<input type="email" placeholder="Email" id="contactFormInputEmail" />
+					<textarea placeholder="Message" id="contactFormInputMessage" rows="4"></textarea>
+					<button onclick="sendContactMeForm();">Send</button>
+				</form>
 			</section>
 
 		</main>
