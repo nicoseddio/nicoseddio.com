@@ -35,6 +35,7 @@ h1 {
 	color: white;
 	background-color: black;
 	padding: 64px;
+	margin-bottom: 16px;
 }
 
 a {
@@ -69,6 +70,12 @@ nav menu {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+.width-full {
+	width: 100%;
+}
+.width-half {
+	width: 50%;
 }
 
 .floated-children:after {
@@ -116,18 +123,33 @@ nav menu {
 
 input {
 	width: 100%;
-	padding: 12px 20px;
-	margin: 12px 0;
-	border: 5px solid black;
+	padding: 16px 20px;
+	margin: 16px 0;
+	border: 16px solid black;
 	background-color: black;
 	color: white;
 	font-size: large;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+} 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+}  
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
+}
+:focus {
+	outline: none;
+	background-color: white;
+	color: black;
+}
 textarea {
 	width: 100%;
-	padding: 12px 20px;
-	margin: 12px 0;
-	border: 5px solid black;
+	padding: 16px 20px;
+	margin: 16px 0;
+	border: 16px solid black;
 	background-color: black;
 	color: white;
 	font-size: large;
@@ -137,7 +159,7 @@ button {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 12px 0;
-	border: 5px solid black;
+	border: 16px solid black;
 	background-color: black;
 	color: white;
 	font-size: large;

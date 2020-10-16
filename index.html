@@ -26,22 +26,22 @@
 			
 			<!-- social media icons -->
 			<section class="flex-container">
-				<a href="https://nicoseddio.com/linkedin" class="module inverting-icon">
+				<a href="https://nicoseddio.com/linkedin" class="module inverting-icon" title="Visit my LinkedIn profile">
 					<div class="icon-container">
-						<img src="media/images/social_linkedin_black.png" class="icon-top">
-						<img src="media/images/social_linkedin_white.png">
+						<img src="media/images/social_linkedin_black.png" class="icon-top" alt="linkedin icon">
+						<img src="media/images/social_linkedin_white.png" alt="linkedin icon">
 					</div>
 				</a>
-				<a href="https://nicoseddio.com/github" class="module inverting-icon">
+				<a href="https://nicoseddio.com/github" class="module inverting-icon" title="Explore my GitHub repositories">
 					<div class="icon-container">
-						<img src="media/images/social_github_black.png" class="icon-top">
-						<img src="media/images/social_github_white.png">
+						<img src="media/images/social_github_black.png" class="icon-top" alt="github icon">
+						<img src="media/images/social_github_white.png" alt="github icon image">
 					</div>
 				</a>
-				<a href="https://nicoseddio.com/documents/resume.pdf" class="module inverting-icon">
+				<a href="https://nicoseddio.com/documents/resume.pdf" class="module inverting-icon" title="Download my resume">
 					<div class="icon-container">
-						<img src="media/images/icon_resume_black.png" class="icon-top">
-						<img src="media/images/icon_resume_white.png">
+						<img src="media/images/icon_resume_black.png" class="icon-top" alt="resume icon">
+						<img src="media/images/icon_resume_white.png" alt="resume icon">
 					</div>
 				</a>
 			</section>
@@ -51,13 +51,13 @@
 				<p>This is a placeholder section!</p>
 			</section> -->
 			
-			<section>
+			<section title="Contact form">
 				<h1>Contact</h1>
-				<form onsubmit="return false">
-					<input type="text" placeholder="Name" id="contactFormInputName" />
-					<input type="email" placeholder="Email" id="contactFormInputEmail" />
-					<textarea placeholder="Message" id="contactFormInputMessage" rows="4"></textarea>
-					<button onclick="sendContactMeForm();">Send</button>
+				<form class="flex-container" onsubmit="return false">
+					<input type="text" placeholder="Name" class="width-half" id="contactFormInputName" />
+					<input type="email" placeholder="Email" class="width-half" id="contactFormInputEmail" />
+					<textarea placeholder="Message" class="width-full" id="contactFormInputMessage" rows="4"></textarea>
+					<button onclick="sendContactMeForm();" class="width-full" >Send</button>
 				</form>
 			</section>
 
