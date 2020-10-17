@@ -169,6 +169,7 @@ input {
 	color: black;
 }
 textarea {
+	display: block;
 	font-family: monospace;
 	width: 100%;
 	padding: 16px 16px;
@@ -193,4 +194,27 @@ button:hover {
 	background-color: black;
 	color: white;
 	cursor: pointer;
+}
+label { 
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/* iphone */
+textarea,
+input.text,
+input[type="text"],
+input[type="email"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
 }

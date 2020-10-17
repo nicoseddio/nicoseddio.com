@@ -62,10 +62,13 @@
 			
 			<form action="https://formspree.io/f/myybeqew" method="POST" title="Contact me form" id="ContactMe">
 				<h1>Contact</h1>
-				<input type="text" name="name" placeholder="name" title="Enter your name"
-					/><input type="email" name="_replyto" placeholder="email" title="Enter your e-mail address"/>
+				<label type="hidden" for="contactFormInputName">Requester's Name:</label>
+				<label type="hidden" for="contactFormInputEmail">Requester's E-mail:</label>
+				<input type="text" name="name" placeholder="name" title="Enter your name" id="contactFormInputName" required
+					/><input type="email" name="_replyto" placeholder="email" title="Enter your e-mail address" id="contactFormInputEmail" required/>
 				<input type="hidden" name="_subject" value="New Contact Request via nicoseddio.com" />
-				<textarea  name="message" placeholder="message" id="contactFormInputMessage" rows="4" title="Enter your message to me"></textarea>
+				<label type="hidden" for="contactFormInputMessage">Requester's Message:</label>
+				<textarea  name="message" placeholder="message" id="contactFormInputMessage" rows="4" title="Enter your message to me" required></textarea>
 				<button type="submit" title="Submit contact form">Send</button>
 			</form>
 
