@@ -1,9 +1,18 @@
 * {
+	/* layout */
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	background-repeat: no-repeat;
+
+	/* transitions */
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
 }
 body {
 	display: inherit;
@@ -25,17 +34,31 @@ body main {
 body footer {
 	max-width:1280px;
 	margin: 0 auto;
+
+	padding: 32px;
 }
 
 h1 {
 	font-size: 64px;
+	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
 	width: 100%;
 	color: white;
 	background-color: black;
 	padding: 64px;
-	margin-bottom: 16px;
+	line-height: 1;
+	height: 180px;
+}
+p {
+	max-width: 768px;
+	line-height: 1.4;
+	margin: 0 auto;
+}
+small {
+	font-size: small;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 a {
@@ -43,11 +66,6 @@ a {
 	color: inherit;
 	font-weight: bold;
 	text-transform: uppercase;
-	-o-transition:.3s;
-	-ms-transition:.3s;
-	-moz-transition:.3s;
-	-webkit-transition:.3s;
-	transition:.3s;
 }
 a:hover {
 	color: white;
@@ -60,10 +78,14 @@ img {
 }
 nav a {
 	float: left;
-	padding: 32px 16px;
+	padding: 32px 32px;
 }
 nav menu {
 	float: right;
+}
+
+article {
+	padding: 32px;
 }
 
 .flex-container {
@@ -122,46 +144,53 @@ nav menu {
 
 
 input {
-	width: 100%;
-	padding: 16px 20px;
-	margin: 16px 0;
-	border: 16px solid black;
-	background-color: black;
-	color: white;
+	font-family: monospace;
+	width: 50%;
+	padding: 16px 16px;
+	border: 32px solid black;
+	background-color: white;
+	color: black;
 	font-size: large;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: white;
+	color: black;
 	opacity: 1; /* Firefox */
 } 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-	color: white;
+	color: black;
 }  
 ::-ms-input-placeholder { /* Microsoft Edge */
-	color: white;
+	color: black;
 }
 :focus {
 	outline: none;
-	background-color: white;
+	/* background-color: black; */
+	border-color: black;
 	color: black;
 }
 textarea {
+	font-family: monospace;
 	width: 100%;
-	padding: 16px 20px;
-	margin: 16px 0;
-	border: 16px solid black;
-	background-color: black;
-	color: white;
+	padding: 16px 16px;
+	border: 32px solid black;
+	background-color: white;
+	color: black;
 	font-size: large;
 	resize: none;
 }
 button {
+	font: inherit;
 	width: 100%;
-	padding: 12px 20px;
-	margin: 12px 0;
-	border: 16px solid black;
+	padding: 16px 16px;
+	border: 32px solid black;
+	background-color: white;
+	color: black;
+	font-size: large;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+button:hover {
 	background-color: black;
 	color: white;
-	font-size: large;
-	text-transform: uppercase;
+	cursor: pointer;
 }
